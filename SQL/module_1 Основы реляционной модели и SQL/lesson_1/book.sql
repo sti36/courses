@@ -4,6 +4,7 @@ CREATE TABLE book(
     author	VARCHAR(30),
     price DECIMAL(8, 2),
     amount INT
-)
+); -- Создание таблицы
 
--- Сформулируйте SQL запрос для создания таблицы book
+INSERT INTO book (title, author, price, amount)
+VALUES ('Мастер и Маргарита', 'Булгаков М.А.', 670.99, 3); -- Создание записи в таблицу
