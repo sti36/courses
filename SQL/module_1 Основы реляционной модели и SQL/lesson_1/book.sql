@@ -16,3 +16,8 @@ SELECT * FROM book -- выборка всех данных из таблицы b
 
 SELECT author, title, price
 FROM book -- выборка отдельных столбцов (author, title, price)
+
+SELECT 
+title AS Название, 
+author AS Автор
+FROM book -- присвоил новые имена для столбцов при формировании выборки
