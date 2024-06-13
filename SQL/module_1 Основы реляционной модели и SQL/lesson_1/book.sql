@@ -25,3 +25,7 @@ FROM book -- присвоил новые имена для столбцов пр
 SELECT title, amount,
     amount * 1.65 AS pack
 FROM book -- произвёл выборку с вычисляемым столбцом
+
+SELECT title, author, amount,
+    ROUND(price - (price/100 * 30), 2) AS new_price
+FROM book; -- произвёл выборку с вычисляемым столбцом
