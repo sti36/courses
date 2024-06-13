@@ -21,3 +21,7 @@ SELECT
 title AS Название, 
 author AS Автор
 FROM book -- присвоил новые имена для столбцов при формировании выборки
+
+SELECT title, amount,
+    amount * 1.65 AS pack
+FROM book -- произвёл выборку с вычисляемым столбцом
