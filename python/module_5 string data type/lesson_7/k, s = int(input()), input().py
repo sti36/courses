@@ -1,8 +1,11 @@
 n, s = int(input()), input()
+lowers_simvols = 122
+one_lowers_simvols = 97
+lowers_simvols_position = 96
 for i in range(0, len(s)):
     de_code = ord(s[i]) - n
-    if de_code < 97:
-        de_code = 122 - (96 - de_code)
+    if de_code < one_lowers_simvols:
+        de_code = lowers_simvols - (lowers_simvols_position - de_code)
     print(chr(de_code), end='')
 
 """
