@@ -1,11 +1,10 @@
 n, s = int(input()), input()
-lowers_simvols = 122
-one_lowers_simvols = 97
-lowers_simvols_position = 96
+list_letters_ascii = 122
+one_lowers_letters_ascii = 96
 for i in range(0, len(s)):
     de_code = ord(s[i]) - n
-    if de_code < one_lowers_simvols:
-        de_code = lowers_simvols - (lowers_simvols_position - de_code)
+    if de_code <= one_lowers_letters_ascii:
+        de_code = list_letters_ascii - (one_lowers_letters_ascii - de_code)
     print(chr(de_code), end='')
 
 """
